@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuickBite Tiffin Service</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+  <header>
+    <div class="logo">
+      <h1>QuickBite Tiffin Service</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Delicious Maharashtrian Meals Delivered to Your Door</h2>
+      <p>Experience the authentic taste of Maharashtrian food with our fresh, homemade tiffins.</p>
+      <a href="menu.html" class="cta-button">Menu</a>
+    </div>
+  </section>
+
+  
+  <section class="featured">
+    <h2>Featured Dishes</h2><br><br>
+    <div class="dish-container">
+      <div class="dish">
+      <img src="images/kanda-poha.jpg" alt="Kanda-Poha" class="dish-img">
+      <h3>Kanda Poha</h3>
+      <p>A traditional Maharashtrian breakfast made with flattened rice, peanuts, and spices.</p>
+      </div>
+      <div class="dish">
+      <img src="images/misal pav.jpg" alt="Misal Pav" class="dish-img">
+      <h3>Misal Pav</h3>
+      <p>Spicy sprouted beans curry served with pav, topped with crunchy sev.</p>
+      </div>
+      <div class="dish">
+      <img src="images/puran poli.jpg" alt="Puran Poli" class="dish-img">
+      <h3>Puran Poli</h3>
+      <p>A sweet flatbread stuffed with a jaggery-chickpea mixture, perfect for festive occasions.</p>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="intro">
+    <h2>About Us</h2>
+    <p>QuickBite Tiffin Service provides you with a variety of healthy and tasty Maharashtrian meals. Whether you're at work or home, we ensure you get fresh, nutritious, and flavorful food every day.</p>
+    <p>Our menu includes breakfast, lunch, and dinner, with options that cater to all tastes. From traditional Poha to spicy Misal Pav, we’ve got you covered!</p>
+  </section>
+
+  <section class="cta">
+    <h2>Ready to Taste the Best of Maharashtra?</h2>
+    <p>Place your order today and get your tiffin delivered to your doorstep.</p>
+    <button id="orderBtn" class="cta-button">Order Now</button>
+  </section>
+  
+  <div id="orderModal" class="modal" style="display: none;">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Place Your Order</h2>
+  
+      <form id="orderForm" method="post" action="https://formsubmit.co/utkarshgore2005@gmail.com">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+  
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" required></textarea>
+  
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+  
+        <label for="pincode">Pincode:</label>
+        <input type="text" id="pincode" name="pincode" pattern="[0-9]{6}" required>
+  
+        <label for="meal-time">Meal Time:</label>
+        <select id="meal-time" name="meal-time" required>
+          <option value="">-- Select --</option>
+          <option value="Breakfast">Breakfast</option>
+          <option value="Lunch">Lunch</option>
+          <option value="Dinner">Dinner</option>
+        </select>
+  
+        <p id="priceDisplay" style="font-weight: bold; margin-top: 10px;">Meal Price: --</p>
+        <p style="color: green;">Note: Pay on delivery</p>
+  
+        <button type="submit">Submit Order</button>
+      </form>
+    </div>
+  </div>
+  
+<script src="script.js"></script>
+
+  
+  <footer>
+    <p>&copy; 2025 QuickBite Tiffin Service | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
